@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="jsCodeFile.js"></script>
+    <script src="https://kit.fontawesome.com/cebd2dbb15.js"></script>
+    <link rel="stylesheet" href="cssFile.css">
+    </head>
+<body>
+
+<!--En üst kısımda logonun bulunduğu Navbar kısmı.-->
+<div class="navbar">
+  <div class="logo" href="#"><img src="logo.jpg"/></div>
+
+  <div class="user">
+    <div class="user" id="name" >
+      <span id="firstName">GÜLŞAH</span>
+      <span id="lastName">ÖZAKINCI</span>
+    </div>
+    <div class="user" id="profileImage"></div>
+  </div>
+  <a href="#"> Hizmet Kataloğu</a> 
+</div>
+
+<!--Carousel Kısmı-->
+<div class="image-container">
+
+  <!--Help Text-->
+  <div class="help-text">
+    <h1>Size Nasıl Yardımcı Olabiliriz? </h1>
+  </div>
+
+  <!--Search Box-->
+  <div class="container">
+    <div class="wrapper">
+      <input type="text" name="search" id="search" placeholder="Lütfen Anahtar Kelime Giriniz. Ör: email problemi" autocomplete="chrome-off">
+      <div class="results">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="autoComplate.js"></script>
+
+
+
+ <!--Card Design-->
+ <div class="row">
+    <div class="column">
+      <div class="card" style="background:rgb(102, 199, 238);">
+        <i class="fas fa-clipboard-check fa-lg" style="  float: left; margin-top: 20px; color: #fff;" >   İstek Bildir</i>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card" style="background:rgb(87, 218, 27); ">
+        <i class="fas fa-exclamation-circle fa-lg " style="  float: left; margin-top: 20px; color: #fff;" >   Sorun Bildir</i>
+      </div>
+    </div>
+  
+    <div class="column" >
+      <div class="card" style="background:salmon;">
+        <i class="fas fa-layer-group fa-lg " style="  float: left; margin-top: 20px; color: #fff;" >    Tüm Kayıtlarım</i>
+      </div>
+    </div>
+
+  
+  </div>
+
+
+<!--Duyurular-->
+  <div class="text">
+  <h3>Duyurular</h3>
+  <p>Buraya duyurular gelecek buraya duyurular gelecek </p>
+  <p>Buraya duyurular gelecek</p>
+  </div>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,188 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/*En arka*/
+.navbar {
+  width:auto;
+  background-color:#044c99;
+  overflow: auto;
+  position: fixed;
+	top: 0;
+	z-index: 10000;
+	left:0;
+	right: 0;
+	z-index: 99999;
+}
+/*Hizmet Kataloğu kısmı*/
+.navbar a {
+  padding: 30px;
+  color: white;
+  float: right;
+  text-decoration: none;
+  font-size: 17px;
+}
+/*Hizmet kataloğunun üzerine imleç geldiğinde rengini siyah yapma*/
+.navbar a:hover {
+  background-color: #000;
+}
+/*Logoyu sol tarafa sabitlemek için*/
+.logo {
+  float: left;
+  padding: 12px;
+}
+
+.user{
+  float: right;
+}
+
+/*Kullanıcı adı ve soyadının baş harfler olduğu yuvarlak */
+#profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #022f5f;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-left: 0px; 
+}
+
+/*Kullanıcı adı ve soyadı*/
+.user #name{
+  padding: 30px;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 30px;
+  font-size: 15px;
+}
+
+/*Arka planın bulduğu yer*/
+.image-container {
+  background-image: url("arkaplan.jpg");
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+	top: 82px;	
+	left:0;
+	right: 0;
+}
+
+/*Yazıyı konumlandırma*/
+.help-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*Search bar*/
+.wrapper {
+  top: 150px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.15);
+  position: relative;
+  width: 450px;
+}
+
+input {
+  width:100%;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0px 40px 0px 10px;
+  font-size: 18px;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+}
+
+input:focus {
+  outline: none;
+}
+
+.results {
+  padding: 0px;
+}
+
+.results ul 
+{margin: 0; padding: 0; }
+
+.results ul li {
+  list-style: none;
+  border-radius: 3px;
+  opacity: 0;
+  display: none;
+  padding: 8px 12px;
+  transition: all .5s linear;
+}
+
+.show .results ul li {
+  opacity: 1;
+  display: block;
+}
+
+.show .results {
+  padding: 10px;
+}
+
+.results ul li:hover {
+  background: #ececec
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
+  float: left;
+  width: 270px;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+  margin-top: 220px;
+  margin-left: 30%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 210px;
+  height: 80px;
+  border-radius: 20px;}
+
+.text{
+  top:50px;
+  margin-left: 16%;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar{
+    float: none;
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
